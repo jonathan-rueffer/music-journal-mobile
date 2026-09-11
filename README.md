@@ -1,11 +1,10 @@
 # Music Journal
 
-A mobile app for tagging songs with the memories they carry — when you heard
-it, where you were, how it felt, what chapter of life it belongs to. Writing
-a note is optional; tagging is the core interaction.
+A mobile app for tagging songs with the memories they carry (e.g., when you heard
+it, where you were, how it felt, what chapter of life it belongs to). Not officially deployed yet.
 
 Personal project, rebuilt from an earlier single-user web app
-([JuniorIS](https://github.com/Jonathan765/JuniorIS)) into a small-scale,
+([JuniorIS](https://github.com/Jonathan765/JuniorIS)) into a small-scale, zer-cost,
 multi-user mobile app with real authentication and per-user data isolation.
 
 ## Stack
@@ -17,7 +16,7 @@ multi-user mobile app with real authentication and per-user data isolation.
 | Database | Supabase (PostgreSQL) with Row-Level Security |
 | Serverless | Supabase Edge Function (Deno) |
 
-## What's technically interesting here
+## Technical Components
 
 - **OAuth token lifecycle management** — Supabase's built-in Spotify
   provider doesn't auto-refresh the underlying Spotify access token, so a
