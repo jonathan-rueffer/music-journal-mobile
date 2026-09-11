@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -R /tmp/expo-scaffold-tmp/App.tsx /tmp/expo-scaffold-tmp/app.json /tmp/expo-scaffold-tmp/index.ts /tmp/expo-scaffold-tmp/tsconfig.json /tmp/expo-scaffold-tmp/package.json /tmp/expo-scaffold-tmp/package-lock.json /tmp/expo-scaffold-tmp/assets .)",
+      "Bash(cp -R /tmp/expo-scaffold-tmp/node_modules .)",
+      "Bash(npx expo *)",
+      "Bash(npx tsc *)",
+      "Bash(curl -s -o /tmp/expo-web-bundle.html -w \"HTTP %{http_code}\\\\n\" http://localhost:8081/)",
+      "Read(//private/tmp/**)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -w \"\\\\nHTTP %{http_code}\\\\n\" \"http://localhost:8081/index.bundle?platform=web&dev=true\" -o /tmp/expo-bundle.js)",
+      "Bash(npx supabase *)",
+      "Read(//Users/jonathanrueffer/.supabase/**)",
+      "Bash(command -v supabase)",
+      "Bash(security dump-keychain *)",
+      "Bash(pkill -f \"supabase\")",
+      "Bash(plutil -convert xml1 -o - /Users/jonathanrueffer/Projects/MusicJournalingApp/ios/MusicJournal/Info.plist)",
+      "Bash(python3 -c ' *)",
+      "Bash(plutil -convert xml1 -o /tmp/Info.plist /Users/jonathanrueffer/Projects/MusicJournalingApp/ios/MusicJournal/Info.plist)",
+      "Bash(rm -f /tmp/Info.plist)",
+      "Bash(rm -f /tmp/expo-web.log /tmp/expo-web.pid /tmp/expo-bundle.js)",
+      "Bash(lsof -i :8081 -sTCP:LISTEN)",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/expo/package.json'\\).dependencies['@expo/vector-icons']\\)\")",
+      "Bash(npm uninstall *)",
+      "Bash(grep -v \"^\\\\.$\")",
+      "Bash(curl -s -m 60 -o /tmp/bundle_output2.js -w \"%{http_code}\\\\n\" \"http://localhost:8091/index.bundle?platform=web&dev=true\")",
+      "Bash(pkill -f \"expo start\")",
+      "Bash(rm -f /tmp/expo_bundle_check2.log /tmp/bundle_output2.js)",
+      "Bash(npx eslint *)",
+      "Bash(curl -s \"https://api.github.com/repos/Jonathan765/JuniorIS/contents/\")",
+      "Bash(curl -s \"https://api.github.com/repos/Jonathan765/JuniorIS/contents/frontend/src\")",
+      "Bash(curl -s \"https://api.github.com/repos/Jonathan765/JuniorIS/contents/frontend/src/components\")",
+      "Bash(curl -s \"https://api.github.com/repos/Jonathan765/JuniorIS/contents/frontend/src/pages\")",
+      "Bash(curl -s \"https://api.github.com/repos/Jonathan765/JuniorIS/contents/frontend/src/styles\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/Jonathan765/JuniorIS/main/frontend/src/styles/MemoryList.css\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/Jonathan765/JuniorIS/main/frontend/src/components/MemoryList.js\")",
+      "Bash(grep *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); deps=d.get\\('dependencies',{}\\); print\\('reanimated:', deps.get\\('react-native-reanimated'\\)\\); print\\('worklets:', deps.get\\('react-native-worklets'\\)\\)\")",
+      "Bash(python3 -c \"import json,sys; print\\(json.load\\(sys.stdin\\).get\\('version'\\)\\)\")"
+    ]
+  }
+}
